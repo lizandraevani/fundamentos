@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Eventos em JavaScript</title>
+    <style>
+        #meuBotao {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo">Clique no botão para mudar este texto</h1>
+    <button id="meuBotao">Clique aqui</button>
+
+    <script>
+        // Seleciona o botão pelo ID
+        const botao = document.geElementById('meuBotao');
+
+        // Adiciona um ouvinte de evento para o clique
+        botao.addEventListener('click', function() {
+            // Altera o texto do titulo quando o botão é clicado
+            dumentgetElementyById('titulo').innerText = 'você clicou o botão!';
+        
+        });
+    </script>
+    
+</body>
+</html>
